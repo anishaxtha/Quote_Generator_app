@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quote Generator</title>
+</head>
+
+<body>
+    <nav>
+        <div class="toggle">
+            <label class="switch">
+                <input type="checkbox" id="darkMode" onchange="toggleDarkMode()" />
+                <span class="slider"></span>
+            </label>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="header-content">
+            <h2 class="header">Quote Generator App</h2>
+            <select class="category">
+                <option value="science">Science</option>
+                <option value="inspiration">Inspiration</option>
+            </select>
+        </div>
+        <div class="main-content">
+            <div class="controls">
+                <button class="tooltip" onclick="increaseFontSize()" id="increase">+
+                    <span class="tooltiptext">Increase Quote Font size</span></button>
+                <button class="tooltip" onclick="decreaseFontSize()" id="decrease">-
+                    <span class="tooltiptext">Decrease Quote Font size</span></button>
+            </div>
+            <div class="text-area">
+                <span class="quote">
+                </span>
+                <div class="writer">
+
+                </div>
+            </div>
+            <div class="btn">
+                <button id="prev" onclick="previousQuote()">Previous</button>
+                <button id="random" onclick="randomQuote()">Random</button>
+                <button id="next" onclick="nextQuote()">Next</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
